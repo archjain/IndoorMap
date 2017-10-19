@@ -1,0 +1,478 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		71CBCA415B3C13AF02CF1E0F /* libPods-IndoorMap.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 0D243817CEE4BEA689DB2A20 /* libPods-IndoorMap.a */; };
+		AE9764201C1F084E0058A4DC /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE97641F1C1F084E0058A4DC /* AppDelegate.swift */; };
+		AE9764221C1F084E0058A4DC /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE9764211C1F084E0058A4DC /* ViewController.swift */; };
+		AE9764251C1F084E0058A4DC /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AE9764231C1F084E0058A4DC /* Main.storyboard */; };
+		AE9764271C1F084E0058A4DC /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = AE9764261C1F084E0058A4DC /* Assets.xcassets */; };
+		AE97642A1C1F084E0058A4DC /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AE9764281C1F084E0058A4DC /* LaunchScreen.storyboard */; };
+		E753CBA11F6C7D9F00322CAD /* ScanViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E753CBA01F6C7D9F00322CAD /* ScanViewController.swift */; };
+		E753CBA41F6C7E2D00322CAD /* MyCustomTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = E753CBA31F6C7E2D00322CAD /* MyCustomTableViewCell.swift */; };
+		E7894F331F7A96F800BD94EC /* CustomTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = E7894F321F7A96F800BD94EC /* CustomTableViewCell.swift */; };
+		E7894F351F7A9F1700BD94EC /* AssetViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E7894F341F7A9F1700BD94EC /* AssetViewController.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		0D243817CEE4BEA689DB2A20 /* libPods-IndoorMap.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-IndoorMap.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		1FAE69C9DC4FC3423C8FB152 /* Pods-IndoorMap.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-IndoorMap.debug.xcconfig"; path = "Pods/Target Support Files/Pods-IndoorMap/Pods-IndoorMap.debug.xcconfig"; sourceTree = "<group>"; };
+		3D33C44C5E1C7D7236B1453F /* Pods-IndoorMap.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-IndoorMap.release.xcconfig"; path = "Pods/Target Support Files/Pods-IndoorMap/Pods-IndoorMap.release.xcconfig"; sourceTree = "<group>"; };
+		AE97641C1C1F084E0058A4DC /* IndoorMap.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = IndoorMap.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		AE97641F1C1F084E0058A4DC /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		AE9764211C1F084E0058A4DC /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		AE9764241C1F084E0058A4DC /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		AE9764261C1F084E0058A4DC /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		AE9764291C1F084E0058A4DC /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		AE97642B1C1F084E0058A4DC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		AE97643C1C1F09810058A4DC /* ObjCBridge.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ObjCBridge.h; sourceTree = "<group>"; };
+		E753CBA01F6C7D9F00322CAD /* ScanViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ScanViewController.swift; sourceTree = "<group>"; };
+		E753CBA31F6C7E2D00322CAD /* MyCustomTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MyCustomTableViewCell.swift; sourceTree = "<group>"; };
+		E7894F321F7A96F800BD94EC /* CustomTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomTableViewCell.swift; sourceTree = "<group>"; };
+		E7894F341F7A9F1700BD94EC /* AssetViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AssetViewController.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		AE9764191C1F084E0058A4DC /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				71CBCA415B3C13AF02CF1E0F /* libPods-IndoorMap.a in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		3149C0703AF275D8CE139E00 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				1FAE69C9DC4FC3423C8FB152 /* Pods-IndoorMap.debug.xcconfig */,
+				3D33C44C5E1C7D7236B1453F /* Pods-IndoorMap.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		753DD89218C1BD7C56D956FE /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				0D243817CEE4BEA689DB2A20 /* libPods-IndoorMap.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		AE9764131C1F084E0058A4DC = {
+			isa = PBXGroup;
+			children = (
+				E753CBA21F6C7E0E00322CAD /* Utils */,
+				AE97641E1C1F084E0058A4DC /* IndoorMap */,
+				AE97641D1C1F084E0058A4DC /* Products */,
+				3149C0703AF275D8CE139E00 /* Pods */,
+				753DD89218C1BD7C56D956FE /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		AE97641D1C1F084E0058A4DC /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				AE97641C1C1F084E0058A4DC /* IndoorMap.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		AE97641E1C1F084E0058A4DC /* IndoorMap */ = {
+			isa = PBXGroup;
+			children = (
+				AE97641F1C1F084E0058A4DC /* AppDelegate.swift */,
+				AE9764211C1F084E0058A4DC /* ViewController.swift */,
+				AE9764231C1F084E0058A4DC /* Main.storyboard */,
+				AE9764261C1F084E0058A4DC /* Assets.xcassets */,
+				AE9764281C1F084E0058A4DC /* LaunchScreen.storyboard */,
+				AE97642B1C1F084E0058A4DC /* Info.plist */,
+				AE97643C1C1F09810058A4DC /* ObjCBridge.h */,
+				E753CBA01F6C7D9F00322CAD /* ScanViewController.swift */,
+				E7894F321F7A96F800BD94EC /* CustomTableViewCell.swift */,
+				E7894F341F7A9F1700BD94EC /* AssetViewController.swift */,
+			);
+			path = IndoorMap;
+			sourceTree = "<group>";
+		};
+		E753CBA21F6C7E0E00322CAD /* Utils */ = {
+			isa = PBXGroup;
+			children = (
+				E753CBA31F6C7E2D00322CAD /* MyCustomTableViewCell.swift */,
+			);
+			name = Utils;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		AE97641B1C1F084E0058A4DC /* IndoorMap */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = AE97642E1C1F084E0058A4DC /* Build configuration list for PBXNativeTarget "IndoorMap" */;
+			buildPhases = (
+				97C8DBB5DA8D35745BB1C38C /* [CP] Check Pods Manifest.lock */,
+				AE97643D1C1F12B30058A4DC /* Check TODOs */,
+				AE9764181C1F084E0058A4DC /* Sources */,
+				AE9764191C1F084E0058A4DC /* Frameworks */,
+				AE97641A1C1F084E0058A4DC /* Resources */,
+				F2C47F3536E53BF0158BAFA3 /* [CP] Embed Pods Frameworks */,
+				39B3A6DA8181AC8C182514DB /* [CP] Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = IndoorMap;
+			productName = IndoorMap;
+			productReference = AE97641C1C1F084E0058A4DC /* IndoorMap.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		AE9764141C1F084E0058A4DC /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0720;
+				LastUpgradeCheck = 0830;
+				ORGANIZATIONNAME = "Estimote, Inc.";
+				TargetAttributes = {
+					AE97641B1C1F084E0058A4DC = {
+						CreatedOnToolsVersion = 7.2;
+						DevelopmentTeam = 9ADYBL6CXC;
+						LastSwiftMigration = 0820;
+						ProvisioningStyle = Automatic;
+						SystemCapabilities = {
+							com.apple.BackgroundModes = {
+								enabled = 1;
+							};
+						};
+					};
+				};
+			};
+			buildConfigurationList = AE9764171C1F084E0058A4DC /* Build configuration list for PBXProject "IndoorMap" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = AE9764131C1F084E0058A4DC;
+			productRefGroup = AE97641D1C1F084E0058A4DC /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				AE97641B1C1F084E0058A4DC /* IndoorMap */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		AE97641A1C1F084E0058A4DC /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				AE97642A1C1F084E0058A4DC /* LaunchScreen.storyboard in Resources */,
+				AE9764271C1F084E0058A4DC /* Assets.xcassets in Resources */,
+				AE9764251C1F084E0058A4DC /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		39B3A6DA8181AC8C182514DB /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-IndoorMap/Pods-IndoorMap-resources.sh",
+				"${PODS_ROOT}/EstimoteIndoorSDK/EstimoteIndoorLocationSDK/Resources/avatar.png",
+				"${PODS_ROOT}/EstimoteIndoorSDK/EstimoteIndoorLocationSDK/Resources/avatar@2x.png",
+				"${PODS_ROOT}/EstimoteIndoorSDK/EstimoteIndoorLocationSDK/Resources/avatar@3x.png",
+				"${PODS_ROOT}/EstimoteIndoorSDK/EstimoteIndoorLocationSDK/Resources/avatar_noarrow.png",
+				"${PODS_ROOT}/EstimoteIndoorSDK/EstimoteIndoorLocationSDK/Resources/avatar_noarrow@2x.png",
+				"${PODS_ROOT}/EstimoteIndoorSDK/EstimoteIndoorLocationSDK/Resources/avatar_noarrow@3x.png",
+				"${PODS_ROOT}/EstimoteIndoorSDK/EstimoteIndoorLocationSDK/Resources/beaconBeetrootSmall.png",
+				"${PODS_ROOT}/EstimoteIndoorSDK/EstimoteIndoorLocationSDK/Resources/beaconBeetrootSmall@2x.png",
+				"${PODS_ROOT}/EstimoteIndoorSDK/EstimoteIndoorLocationSDK/Resources/beaconBeetrootSmall@3x.png",
+				"${PODS_ROOT}/EstimoteIndoorSDK/EstimoteIndoorLocationSDK/Resources/beaconBlackSmall.png",
+				"${PODS_ROOT}/EstimoteIndoorSDK/EstimoteIndoorLocationSDK/Resources/beaconBlackSmall@2x.png",
+				"${PODS_ROOT}/EstimoteIndoorSDK/EstimoteIndoorLocationSDK/Resources/beaconBlackSmall@3x.png",
+				"${PODS_ROOT}/EstimoteIndoorSDK/EstimoteIndoorLocationSDK/Resources/beaconBlueberrySmall.png",
+				"${PODS_ROOT}/EstimoteIndoorSDK/EstimoteIndoorLocationSDK/Resources/beaconBlueberrySmall@2x.png",
+				"${PODS_ROOT}/EstimoteIndoorSDK/EstimoteIndoorLocationSDK/Resources/beaconBlueberrySmall@3x.png",
+				"${PODS_ROOT}/EstimoteIndoorSDK/EstimoteIndoorLocationSDK/Resources/beaconCandySmall.png",
+				"${PODS_ROOT}/EstimoteIndoorSDK/EstimoteIndoorLocationSDK/Resources/beaconCandySmall@2x.png",
+				"${PODS_ROOT}/EstimoteIndoorSDK/EstimoteIndoorLocationSDK/Resources/beaconCandySmall@3x.png",
+				"${PODS_ROOT}/EstimoteIndoorSDK/EstimoteIndoorLocationSDK/Resources/beaconGreySmall.png",
+				"${PODS_ROOT}/EstimoteIndoorSDK/EstimoteIndoorLocationSDK/Resources/beaconGreySmall@2x.png",
+				"${PODS_ROOT}/EstimoteIndoorSDK/EstimoteIndoorLocationSDK/Resources/beaconGreySmall@3x.png",
+				"${PODS_ROOT}/EstimoteIndoorSDK/EstimoteIndoorLocationSDK/Resources/beaconIcySmall.png",
+				"${PODS_ROOT}/EstimoteIndoorSDK/EstimoteIndoorLocationSDK/Resources/beaconIcySmall@2x.png",
+				"${PODS_ROOT}/EstimoteIndoorSDK/EstimoteIndoorLocationSDK/Resources/beaconIcySmall@3x.png",
+				"${PODS_ROOT}/EstimoteIndoorSDK/EstimoteIndoorLocationSDK/Resources/beaconLemonSmall.png",
+				"${PODS_ROOT}/EstimoteIndoorSDK/EstimoteIndoorLocationSDK/Resources/beaconLemonSmall@2x.png",
+				"${PODS_ROOT}/EstimoteIndoorSDK/EstimoteIndoorLocationSDK/Resources/beaconLemonSmall@3x.png",
+				"${PODS_ROOT}/EstimoteIndoorSDK/EstimoteIndoorLocationSDK/Resources/beaconMintSmall.png",
+				"${PODS_ROOT}/EstimoteIndoorSDK/EstimoteIndoorLocationSDK/Resources/beaconMintSmall@2x.png",
+				"${PODS_ROOT}/EstimoteIndoorSDK/EstimoteIndoorLocationSDK/Resources/beaconMintSmall@3x.png",
+				"${PODS_ROOT}/EstimoteIndoorSDK/EstimoteIndoorLocationSDK/Resources/beaconTransparentSmall.png",
+				"${PODS_ROOT}/EstimoteIndoorSDK/EstimoteIndoorLocationSDK/Resources/beaconTransparentSmall@2x.png",
+				"${PODS_ROOT}/EstimoteIndoorSDK/EstimoteIndoorLocationSDK/Resources/beaconTransparentSmall@3x.png",
+				"${PODS_ROOT}/EstimoteIndoorSDK/EstimoteIndoorLocationSDK/Resources/beaconWhiteSmall.png",
+				"${PODS_ROOT}/EstimoteIndoorSDK/EstimoteIndoorLocationSDK/Resources/beaconWhiteSmall@2x.png",
+				"${PODS_ROOT}/EstimoteIndoorSDK/EstimoteIndoorLocationSDK/Resources/beaconWhiteSmall@3x.png",
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-IndoorMap/Pods-IndoorMap-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		97C8DBB5DA8D35745BB1C38C /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-IndoorMap-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		AE97643D1C1F12B30058A4DC /* Check TODOs */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Check TODOs";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "tags=\"TODO:\"\nmatches=`find \"${SRCROOT}\" \\( -name \"*.swift\" \\) -print0 | xargs -0 egrep --with-filename --line-number --only-matching \"($tags).*\\$\"`\necho \"$matches\" | perl -p -e \"s/($tags)/ error: \\$1/\"\n[ -z \"$matches\" ] || exit 1";
+		};
+		F2C47F3536E53BF0158BAFA3 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-IndoorMap/Pods-IndoorMap-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		AE9764181C1F084E0058A4DC /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E7894F331F7A96F800BD94EC /* CustomTableViewCell.swift in Sources */,
+				E7894F351F7A9F1700BD94EC /* AssetViewController.swift in Sources */,
+				AE9764221C1F084E0058A4DC /* ViewController.swift in Sources */,
+				AE9764201C1F084E0058A4DC /* AppDelegate.swift in Sources */,
+				E753CBA41F6C7E2D00322CAD /* MyCustomTableViewCell.swift in Sources */,
+				E753CBA11F6C7D9F00322CAD /* ScanViewController.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		AE9764231C1F084E0058A4DC /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				AE9764241C1F084E0058A4DC /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		AE9764281C1F084E0058A4DC /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				AE9764291C1F084E0058A4DC /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		AE97642C1C1F084E0058A4DC /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.2;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		AE97642D1C1F084E0058A4DC /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		AE97642F1C1F084E0058A4DC /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 1FAE69C9DC4FC3423C8FB152 /* Pods-IndoorMap.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 9ADYBL6CXC;
+				INFOPLIST_FILE = IndoorMap/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.estimote.IndoorMapHoltec;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				SWIFT_OBJC_BRIDGING_HEADER = IndoorMap/ObjCBridge.h;
+				SWIFT_VERSION = 3.0;
+			};
+			name = Debug;
+		};
+		AE9764301C1F084E0058A4DC /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 3D33C44C5E1C7D7236B1453F /* Pods-IndoorMap.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 9ADYBL6CXC;
+				INFOPLIST_FILE = IndoorMap/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.estimote.IndoorMapHoltec;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				SWIFT_OBJC_BRIDGING_HEADER = IndoorMap/ObjCBridge.h;
+				SWIFT_VERSION = 3.0;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		AE9764171C1F084E0058A4DC /* Build configuration list for PBXProject "IndoorMap" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				AE97642C1C1F084E0058A4DC /* Debug */,
+				AE97642D1C1F084E0058A4DC /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		AE97642E1C1F084E0058A4DC /* Build configuration list for PBXNativeTarget "IndoorMap" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				AE97642F1C1F084E0058A4DC /* Debug */,
+				AE9764301C1F084E0058A4DC /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = AE9764141C1F084E0058A4DC /* Project object */;
+}
