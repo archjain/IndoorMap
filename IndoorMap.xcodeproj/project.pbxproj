@@ -13,6 +13,8 @@
 		AE9764251C1F084E0058A4DC /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AE9764231C1F084E0058A4DC /* Main.storyboard */; };
 		AE9764271C1F084E0058A4DC /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = AE9764261C1F084E0058A4DC /* Assets.xcassets */; };
 		AE97642A1C1F084E0058A4DC /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AE9764281C1F084E0058A4DC /* LaunchScreen.storyboard */; };
+		E479CA941FA2584A004CAC91 /* CameraViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E479CA931FA2584A004CAC91 /* CameraViewController.swift */; };
+		E4B976371FACA14700088586 /* BarcodeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E4B976361FACA14700088586 /* BarcodeViewController.swift */; };
 		E753CBA11F6C7D9F00322CAD /* ScanViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E753CBA01F6C7D9F00322CAD /* ScanViewController.swift */; };
 		E753CBA41F6C7E2D00322CAD /* MyCustomTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = E753CBA31F6C7E2D00322CAD /* MyCustomTableViewCell.swift */; };
 		E7894F331F7A96F800BD94EC /* CustomTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = E7894F321F7A96F800BD94EC /* CustomTableViewCell.swift */; };
@@ -31,6 +33,8 @@
 		AE9764291C1F084E0058A4DC /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		AE97642B1C1F084E0058A4DC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		AE97643C1C1F09810058A4DC /* ObjCBridge.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ObjCBridge.h; sourceTree = "<group>"; };
+		E479CA931FA2584A004CAC91 /* CameraViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CameraViewController.swift; sourceTree = "<group>"; };
+		E4B976361FACA14700088586 /* BarcodeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BarcodeViewController.swift; sourceTree = "<group>"; };
 		E753CBA01F6C7D9F00322CAD /* ScanViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ScanViewController.swift; sourceTree = "<group>"; };
 		E753CBA31F6C7E2D00322CAD /* MyCustomTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MyCustomTableViewCell.swift; sourceTree = "<group>"; };
 		E7894F321F7A96F800BD94EC /* CustomTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomTableViewCell.swift; sourceTree = "<group>"; };
@@ -98,6 +102,8 @@
 				E753CBA01F6C7D9F00322CAD /* ScanViewController.swift */,
 				E7894F321F7A96F800BD94EC /* CustomTableViewCell.swift */,
 				E7894F341F7A9F1700BD94EC /* AssetViewController.swift */,
+				E479CA931FA2584A004CAC91 /* CameraViewController.swift */,
+				E4B976361FACA14700088586 /* BarcodeViewController.swift */,
 			);
 			path = IndoorMap;
 			sourceTree = "<group>";
@@ -300,6 +306,8 @@
 				E7894F351F7A9F1700BD94EC /* AssetViewController.swift in Sources */,
 				AE9764221C1F084E0058A4DC /* ViewController.swift in Sources */,
 				AE9764201C1F084E0058A4DC /* AppDelegate.swift in Sources */,
+				E479CA941FA2584A004CAC91 /* CameraViewController.swift in Sources */,
+				E4B976371FACA14700088586 /* BarcodeViewController.swift in Sources */,
 				E753CBA41F6C7E2D00322CAD /* MyCustomTableViewCell.swift in Sources */,
 				E753CBA11F6C7D9F00322CAD /* ScanViewController.swift in Sources */,
 			);

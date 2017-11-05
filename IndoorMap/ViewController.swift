@@ -26,6 +26,15 @@ class ViewController: UIViewController, EILIndoorLocationManagerDelegate, ESTTri
         
     }
     
+    @IBAction func takePicture(_sender: Any){
+        let cameraViewController = self.storyboard?.instantiateViewController(withIdentifier: "CameraViewController") as! CameraViewController
+        var xcord = String(format:"%f",x)
+        var ycord = String(format:"%f",y)
+        cameraViewController.xcordPassed = xcord
+        cameraViewController.ycordPassed = ycord
+        self.navigationController?.pushViewController(cameraViewController, animated: true)
+    }
+    
     @IBAction func locationUpdate(_ sender: Any) {
         print(x)
         print(y)
@@ -90,30 +99,7 @@ class ViewController: UIViewController, EILIndoorLocationManagerDelegate, ESTTri
                     BeaconMajor.text="Searching Assets........"
                     itemId.text?.removeAll()
                 }
-                /*   if nearestBeacon.proximity == CLProximity.immediate  {
-                 BeaconMajor.text="At Asset with Id: "+String(describing: nearestBeacon.major)
-                 itemId.text=String(describing: nearestBeacon.major)
-                 
-                 }else if nearestBeacon.proximity == CLProximity.near{
-                 BeaconMajor.text="At Asset with Id: "+String(describing: nearestBeacon.major)
-                 itemId.text=String(describing: nearestBeacon.major)
-                 sleep(5)
-                 }else if nearestBeacon.proximity == CLProximity.far{
-                 print(nearestBeacon.minor)
-                 print("far")
-                 
-                 BeaconMajor.text="Asset in range with Id: "+String(describing: nearestBeacon.major)
-                 
-                 itemId.text=String(describing: nearestBeacon.major)
-                 
-                 }
-                 else{
-                 print("unknown range")
-                 BeaconMajor.text="Searching Assets........"
-                 itemId.text?.removeAll()
-                 
-                 }*/
-                
+               
             }else{
                 
                 BeaconMajor.text="Searching Assets........"
@@ -137,8 +123,6 @@ class ViewController: UIViewController, EILIndoorLocationManagerDelegate, ESTTri
         
         ESTConfig.setupAppID("archit-asu-gmail-com-s-not-58a", andAppToken: "c7c78b49c21b51fb58f60e639e574bf5")
         
-        //nearable app
-        //  self.triggerManager.delegate = self
         
         self.locationManager.delegate = self
         clLocationManager.delegate=self
@@ -157,10 +141,6 @@ class ViewController: UIViewController, EILIndoorLocationManagerDelegate, ESTTri
                 self.locationView.traceColor=UIColor.blue
                 self.locationView.isUserInteractionEnabled=true
                 self.locationView.backgroundColor=UIColor.gray
-                // self.locationView.isUserInteractionEnabled=true
-                // Consult the full list of properties on:
-                // http://estimote.github.io/iOS-Indoor-SDK/Classes/EILIndoorLocationView.html
-                
                 self.locationView.drawLocation(location)
                 self.locationManager.startPositionUpdates(for: self.location)
             } else if let error = error {
@@ -168,12 +148,7 @@ class ViewController: UIViewController, EILIndoorLocationManagerDelegate, ESTTri
             }
         }
         
-        //nearable app
-        // let rule1 = ESTOrientationRule.orientationEquals(.horizontalUpsideDown, for: .bike)
-        // let rule2 = ESTMotionRule.motionStateEquals(true, forNearableIdentifier: "d547f7cf6bb5ba75")
-        // let trigger = ESTTrigger(rules: [rule1], identifier:"d547f7cf6bb5ba75")
-        // self.triggerManager.startMonitoring(for: trigger)
-        //
+      
         clLocationManager.startRangingBeacons(in: region)
     }
     
@@ -196,14 +171,5 @@ class ViewController: UIViewController, EILIndoorLocationManagerDelegate, ESTTri
         // Dispose of any resources that can be recreated.
     }
     
-    /* func triggerManager(_ manager: ESTTriggerManager, triggerChangedState trigger: ESTTrigger) {
-     print("triggered")
-     if(trigger.identifier=="d547f7cf6bb5ba75" && trigger.state==true){
-     print("sticker moved")
-     }
-     else{
-     print("sticker stable")
-     }
-     }
-     */
+   
 }

@@ -29,12 +29,16 @@
 	</dict>
 	<key>NSBluetoothPeripheralUsageDescription</key>
 	<string>We use bluetooth services to scan ibks</string>
+	<key>NSCameraUsageDescription</key>
+	<string>To take photo</string>
 	<key>NSLocationAlwaysAndWhenInUseUsageDescription</key>
 	<string>We use location service to detect your location</string>
 	<key>NSLocationAlwaysUsageDescription</key>
 	<string>We use location services to detect when you are close to nearables</string>
 	<key>NSLocationWhenInUseUsageDescription</key>
 	<string>we use location services to determine your location</string>
+	<key>NSPhotoLibraryUsageDescription</key>
+	<string>To store photos</string>
 	<key>UIBackgroundModes</key>
 	<array>
 		<string>bluetooth-central</string>
