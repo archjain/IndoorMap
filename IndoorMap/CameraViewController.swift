@@ -86,7 +86,7 @@ class CameraViewController: UIViewController, UIImagePickerControllerDelegate, U
             let compressedJpegImage = UIImage(data:imageData!)
         
             //  UIImageWriteToSavedPhotosAlbum(compressedJpegImage!, nil, nil, nil)
-            let resturl = "http://10.164.11.67/ICS/PW/UploadImage"
+            let resturl = "http://10.1.0.74/ICS/PW/UploadImage"
             let strBase64 = imageData?.base64EncodedString(options: .endLineWithLineFeed)
             //print(strBase64)
             let xcordVal = xcord.text

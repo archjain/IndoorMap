@@ -11,7 +11,7 @@ import UIKit
 class AssetViewController: UIViewController, CLLocationManagerDelegate, UITableViewDelegate, UITableViewDataSource {
     
     let clLocationManager = CLLocationManager()
-    let region = CLBeaconRegion(proximityUUID: NSUUID(uuidString:"00000000-0000-0000-0000-000000001111")! as UUID, identifier:"estimote")
+    let region = CLBeaconRegion(proximityUUID: NSUUID(uuidString:"83cbc516-1f5b-4561-9019-a33e4c8744b7")! as UUID, identifier:"estimote")
     
     @IBOutlet var assetTableView: UITableView!
     @IBOutlet var deviceId: UILabel!
@@ -36,9 +36,9 @@ class AssetViewController: UIViewController, CLLocationManagerDelegate, UITableV
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let movieCell = tableView.dequeueReusableCell(withIdentifier: "customcell", for:indexPath) as! CustomTableViewCell
         let idx:Int = indexPath.row
-        movieCell.asset?.text=String(describing: beaoncsInRange[idx].major)
+        movieCell.asset?.text=String(describing: beaoncsInRange[idx].minor)
         movieCell.proximity?.text=String(describing: beaoncsInRange[idx].proximity.hashValue)
-        movieCell.proximity?.text=String(describing: beaoncsInRange[idx].rssi)
+        movieCell.rssi?.text=String(describing: beaoncsInRange[idx].rssi)
         return movieCell
     }
     override func viewWillAppear(_ animated: Bool) {
@@ -79,14 +79,14 @@ class AssetViewController: UIViewController, CLLocationManagerDelegate, UITableV
                         jsonString+=","
                     }
                     
-                    jsonString=jsonString+"{"+"\"Proximity\":\""+String(describing: beaoncsInRange[i].proximity.hashValue)+"\", "+"\"AssetID\":\""+String(describing: beaoncsInRange[i].major)+"\", "+"\"Rssi\":"+String(describing: beaoncsInRange[i].rssi)+","+"\"DeviceID\":\""+device+"\""+"}"
+                    jsonString=jsonString+"{"+"\"Proximity\":\""+String(describing: beaoncsInRange[i].proximity.hashValue)+"\", "+"\"AssetID\":\""+String(describing: beaoncsInRange[i].minor)+"\", "+"\"Rssi\":"+String(describing: beaoncsInRange[i].rssi)+","+"\"DeviceID\":\""+device+"\""+"}"
                 }
                 jsonString=jsonString+"]"
                 var updateUrl = "http://apps.holtec.com/ICS/pw/UpdateBeaconTrace?jsonData="
                 updateUrl=updateUrl+jsonString
                 print(jsonString)
                 
-                
+          /*
                 URLSession.shared.dataTask(with: NSURL(string: updateUrl.addingPercentEncoding(withAllowedCharacters: NSCharacterSet.urlQueryAllowed)!)! as URL) { data, response, error in
                     let httpResponse = response as! HTTPURLResponse
                     if httpResponse.statusCode==200{
@@ -97,7 +97,7 @@ class AssetViewController: UIViewController, CLLocationManagerDelegate, UITableV
                     }
                     }.resume()
                 
-                
+                */
                 
                 //sleep(5)
                 //
